@@ -1,4 +1,6 @@
 body {
+	color: white;
+	background-color: red;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -19,16 +21,21 @@ header {
 	flex-direction: row;
 	justify-content: space-around;
 }
+#results{
+	background-color: black;
+	color: red;
+}
 
 #first {
-	background-color: pink;
+
 }
 
 #second {
-	background-color: blue;
+
 }
 
 .poke-img {
+	background-color: transparent;
 	display: block;
 	width: 100px;
 	height: 100px;

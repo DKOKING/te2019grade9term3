@@ -3,11 +3,12 @@
 	<head>
 		<title>Pokemon Battle</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	</head>
 	<body>
 
 		<header>
-			<h1>Pokemon Battle</h1>
+			<h1>Welcome to The Pokemon Stadium!</h1>
 		</header>
 
 		<main>
@@ -15,14 +16,17 @@
 				<div class="cards">
 					<div id="first" class="card">
 						<img class="poke-img" src="http://www.sccpre.cat/png/list/121/1213432_question-mark-gif-png.png" alt="question image">
-						<button>Get Pokemon!</button>
+						<button id="btn1">Get Pokemon!</button>
 					</div>
+					
+					<h2>Ready To Battle?</h2>
+					
 					<div id="second" class="card">
 						<img class="poke-img" src="http://www.sccpre.cat/png/list/121/1213432_question-mark-gif-png.png" alt="question image">
-						<button>Get Pokemon!</button>
+						<button id="btn2">Get Pokemon!</button>
 					</div>
 				</div>
-				<button>Battle!</button>
+				<button id="results">Battle!</button>
 			</div>
 		</main>
 		<script src="scripts.js"></script>

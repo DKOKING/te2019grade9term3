@@ -1,0 +1,15 @@
+body{
+	background-color: #00FFFF;
+	background-repeat: no-repeat;
+	color:red ;
+	text-align: center;
+}
+#result{
+	background-color: white;
+	border-style: solid;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-right-width: thin;
+	border-left-width: thin;
+	border-color: black; 
+}
