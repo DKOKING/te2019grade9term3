@@ -1,12 +1,25 @@
 $(document).ready(function(){
+	$("#boy").click(showBoy);
+	$("#girl").click(showGirl);
+	$("#change").click(goBattle);
+
+	function showBoy(){
+		$("#girl").remove();
+		$("#boy").remove();
+		$("#place").append(`<img src="trainer.png">`);
+	}
+	function showGirl(){
+		$("#boy").remove();
+		$("#girl").remove();
+		$("#place").append(`<img src="trainer_female.png">`);
+	}
+	function goBattle(){
+		$("#disappear").hide();
+		$("#start").show();
+	}
+
 	$("#btn1").click(getPokemon);
 	$("#btn2").click(getPokemon2);
-
-	let pokemon = {
-		name: '',
-		attack: 0,
-		img: ''
-	};
 
 	function getPokemon(){
 		let id = Math.floor(Math.random()*800);
@@ -14,7 +27,7 @@ $(document).ready(function(){
 		console.log(response);
 		console.log(response.name);
 		$("#first").empty();
-		$("#first").append(`<img src="${response.sprites[4]}">`);
+		$("#first").append(`<img src="${response.sprites.front_default}">`);
 		$("#first").append(`<h1>Player 1 is:${response.name}</h1>`);
 		
 		});
@@ -26,6 +39,7 @@ $(document).ready(function(){
 	console.log(response);
 	console.log(response.name);
 	$("#second").empty();
+	$("#second").append(`<img src="${response.sprites.front_default}">`);
 	$("#second").append(`<h1>Player 2 is: ${response.name}</h1>`);
 	
 	});
